@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple registration form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Luckiest+Guy&family=Mitr:wght@300&family=Monoton&family=Open+Sans+Condensed:wght@300&family=Sigmar+One&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="main-block">
+        <h1>R E G I S T R A T I O N </h1>
+        <form action="/">
+            <hr>
+            <div class="account-type">
+                <input type="radio" id="radioOne" name="account" checked/>
+                <label for="radioOne" class="radio">Personal</label>
+                <input type="radio" id="radioTwo" name="account" />
+                <label for="radioTwo" class="radio">Company</label>
+            </div>
+            <hr>
+            <label id="icon" for="name"><i class="far fa-envelope"></i></label>
+            <input type="text" name="name" id="name" placeholder="Email" required/>
+            <label id="icon" for="name"><i class="far fa-user"></i></label>
+            <input type="text" name="name" id="name" placeholder="Name" required/>
+            <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+            <input type="password" name="name" id="name" placeholder="Password" required/>
+            <hr>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" checked/>
+                <label for="male" class="radio">Male</label>
+                <input type="radio" id="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+            </div>
+            <hr>
+            <div class="btn-block">
+                <button type="submit" href="/">Submit</button>
+            </div>
+            <hr>
+            <h5 id="or">O R</h5>
+            <hr>
+            <div class="block-item">
+                <h4>Sign up with:</h4>
+                <button class="btn facebook" data-provider="facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></button>
+                <button class="btn twitter" data-provider="twitter"><i class="fab fa-twitter"></i><span>Twitter</span></button>
+                <button class="btn google" data-provider="google"><i class='fab fa-google' style='font-size:24px'></i><span>Google</span></button>
+            </div>
+            <p id="copy"> <a>&copy; Privacy&ensp;Policy</a>.</p>
+
+        </form>
+    </div>
+</body>
+
+</html>
